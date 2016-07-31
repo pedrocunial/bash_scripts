@@ -144,7 +144,7 @@ export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 # aliases
 alias emacsconfig="emacsclient ~/.emacs.d/init.el &"
 alias vimconfig="vim .vimrc"
-alias bashconfig="emacsclient ~/.bashrc &"
+alias bashconfig="emacsclient ~/Documents/Bash/.bashrc &"
 alias emacscommit="bash ~/Documents/Bash/emacscommit.sh" 
 # alias emacs="bash ~/Documents/BASH/emacsopen.sh"
 alias gacp="bash ~/Documents/Bash/gitcommit.sh"
