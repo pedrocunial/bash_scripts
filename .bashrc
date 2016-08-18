@@ -148,10 +148,14 @@ alias bashconfig="emacsclient ~/Documents/Bash/.bashrc &"
 alias emacscommit="bash ~/Documents/Bash/emacscommit.sh" 
 # alias emacs="bash ~/Documents/BASH/emacsopen.sh"
 alias gacp="bash ~/Documents/Bash/gitcommit.sh"
-alias git_pretty="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+alias gitpretty="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 "
+alias amifree="vrms | cowsay -f tux"
 
 # git-aware-prompt
 export GITAWAREPROMPT=~/Documents/Bash/plugins/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+
+# colorful man pages
+export PAGER="most"
