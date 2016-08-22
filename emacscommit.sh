@@ -3,7 +3,7 @@
 
 if [ -z "$1" ]
 then
-    msg="quick auto-commit"
+    msg="Quick commit - $(date)"
 else
     msg=$1
 fi
