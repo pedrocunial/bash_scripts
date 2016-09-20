@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:.
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/gil/.oh-my-zsh
@@ -81,9 +81,9 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 
 # tmux on startup
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
+# if command -v tmux>/dev/null; then
+#   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+# fi
 
 # For termite tabs
 if [[ $TERM == xterm-termite ]]; then
@@ -93,7 +93,6 @@ fi
 
 #
 # Example aliases
-alias zshconfig="vim ~/Documents/Bash/.zshrc"
 # Emacsclient configurations
 # (this makes soo that if emacs is not open
 # it will start a new session, otherwise, it
@@ -101,17 +100,18 @@ alias zshconfig="vim ~/Documents/Bash/.zshrc"
 export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
 # aliases
-alias emacsconfig="emacsclient ~/.emacs.d/init.el &"
-alias vimconfig="vim .vimrc"
-alias bashconfig="vim ~/Documents/Bash/.bashrc &"
+alias zshconfig="$EDITOR ~/Documents/Bash/.zshrc"
+alias emacsconfig="$EDITOR ~/.emacs.d/init.el &"
+alias vimconfig="$EDITOR .vimrc"
+alias bashconfig="$EDITOR ~/Documents/Bash/.bashrc &"
 alias emacscommit="bash ~/Documents/Bash/emacscommit.sh" 
 # alias emacs="bash ~/Documents/BASH/emacsopen.sh"
 alias gacp="bash ~/Documents/Bash/gitcommit.sh"
 alias gitpretty="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 "
 alias amifree="vrms | cowsay -f tux"
-alias flaskinit="vim ~/Documents/Bash/startflask.sh"
-alias termiteconfig="sudo vim /etc/xdg/termite/config"
+alias flaskinit="bash ~/Documents/Bash/startflask.sh"
+alias termiteconfig="$EDITOR /etc/xdg/termite/config"
 
 # colorful man pages
 export PAGER="most"
