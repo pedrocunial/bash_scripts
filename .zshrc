@@ -101,7 +101,7 @@ export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
 # aliases
 alias zshconfig="$EDITOR ~/Documents/Bash/.zshrc"
-alias emacsconfig="$EDITOR ~/.emacs.d/init.el &"
+alias emacsconfig="$EDITOR ~/.spacemacs &"
 alias vimconfig="$EDITOR .vimrc"
 alias bashconfig="$EDITOR ~/Documents/Bash/.bashrc &"
 alias emacscommit="bash ~/Documents/Bash/emacscommit.sh" 
@@ -115,3 +115,4 @@ alias termiteconfig="$EDITOR /etc/xdg/termite/config"
 
 # colorful man pages
 export PAGER="most"
+# export GOPATH="go"
