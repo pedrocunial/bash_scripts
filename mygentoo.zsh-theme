@@ -4,7 +4,7 @@ function prompt_char {
 
 PROMPT='%(!.%{$fg_bold[red]%}.\
 %{$fg_bold[yellow]%}%n\
-%{$reset_color%}%{$fg_bold[red]%}@\
+%{$reset_color%}%{$fg_bold[yellow]%}@\
 %{$fg_bold[yellow]%})%m \
 %{$fg_bold[blue]%}%(!.%1~.%~) \
 $(git_prompt_info)\
