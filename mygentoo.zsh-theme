@@ -3,11 +3,13 @@ function prompt_char {
 }
 
 PROMPT='%(!.%{$fg_bold[red]%}.\
-%{$fg_bold[yellow]%}[%n\
+%{$fg_bold[yellow]%}[ \
+%{$fg_bold[yellow]%}%n\
 %{$reset_color%}%{$fg_bold[yellow]%}@\
-%{$fg_bold[yellow]%})%m] \
+%{$fg_bold[yellow]%})%m \
 %{$fg_bold[blue]%}%(!.%1~.%~) \
 $(git_prompt_info)\
+%{$fg_bold[yellow]%} ]\
 ${NEWLINE}
 %{$fg_bold[blue]%}%_$(prompt_char)%{$reset_color%} '
 
