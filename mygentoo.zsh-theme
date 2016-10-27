@@ -8,8 +8,8 @@ PROMPT='%(!.%{$fg_bold[red]%}.\
 %{$reset_color%}%{$fg_bold[yellow]%}@\
 %{$fg_bold[yellow]%})%m \
 %{$fg_bold[blue]%}%(!.%1~.%~) \
-$(git_prompt_info)\
 %{$fg_bold[yellow]%} ]\
+$(git_prompt_info)\
 ${NEWLINE}
 %{$fg_bold[blue]%}%_$(prompt_char)%{$reset_color%} '
 
