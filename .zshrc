@@ -115,4 +115,10 @@ alias termiteconfig="$EDITOR /etc/xdg/termite/config"
 
 # colorful man pages
 export PAGER="most"
-# export GOPATH="go"
+
+# Go
+export GOPATH=$HOME/Documents/Go
+export PATH=$PATH:$GOPATH/bin
+
+# PORT
+export PORT=8888
