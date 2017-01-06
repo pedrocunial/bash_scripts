@@ -1,4 +1,4 @@
-# Bash Scripts
+## Bash Scripts ##
 
 This is a repository I created for taking control over my shell files and scripts
 
@@ -19,5 +19,5 @@ Also, if you are using zsh, you should add the custom theme (dpoggi-linebreak.zs
 eg.
 
 ```bash
-cp ~/PathToThis/dpoggi-linebreak.zsh-theme ~/.oh-my-zsh/themes
+cp ~/PathToThis/mygentoo.zsh-theme ~/.oh-my-zsh/themes
 ```
