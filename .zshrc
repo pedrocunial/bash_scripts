@@ -122,3 +122,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # PORT
 export PORT=8888
+
+# Android
+export PATH=$PATH:$HOME/Android/Sdk/tools/
