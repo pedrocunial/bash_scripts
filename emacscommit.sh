@@ -8,4 +8,4 @@ else
     msg=$1
 fi
 
-cd ~/.emacs.d && git add -A && git commit -m "$msg" && git push origin master
+cd ~/.emacs.d && git add -A && git commit -m "$msg" && git push
