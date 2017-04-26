@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH:.
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/gil/.oh-my-zsh
+export ZSH=/home/gil/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -104,7 +104,7 @@ alias zshconfig="$EDITOR ~/Documents/Bash/.zshrc"
 alias emacsconfig="$EDITOR ~/.spacemacs &"
 alias vimconfig="$EDITOR .vimrc"
 alias bashconfig="$EDITOR ~/Documents/Bash/.bashrc &"
-alias emacscommit="bash ~/Documents/Bash/emacscommit.sh" 
+alias emacscommit="bash ~/Documents/Bash/emacscommit.sh"
 # alias emacs="bash ~/Documents/BASH/emacsopen.sh"
 alias gacp="bash ~/Documents/Bash/gitcommit.sh"
 alias gitpretty="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -125,3 +125,10 @@ export PORT=8888
 
 # Android
 export PATH=$PATH:$HOME/Android/Sdk/tools/
+
+# Python
+alias python="python3"
+alias pip="pip3"
+
+# Ubuntu
+alias aptup="sudo apt update && sudo apt upgrade -y"
