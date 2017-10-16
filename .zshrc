@@ -97,7 +97,7 @@ fi
 # (this makes soo that if emacs is not open
 # it will start a new session, otherwise, it
 # will open on the current one)
-export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
+export ALTERNATE_EDITOR=emacs EDITOR=vim VISUAL=emacsclient
 
 # aliases
 alias zshconfig="$EDITOR ~/Documents/Bash/.zshrc"
@@ -132,3 +132,7 @@ alias pip="pip3"
 
 # Ubuntu
 alias aptup="sudo apt update && sudo apt upgrade -y"
+
+# Quartus
+alias quartus="$HOME/intelFPGA_lite/17.0/quartus/bin/quartus"
+export LD_LIBRARY_PATH=/home/user/lib/gcc-4.9.0/lib:/home/user/lib/boost_1_55_0/stage/lib:$LD_LIBRARY_PATH
